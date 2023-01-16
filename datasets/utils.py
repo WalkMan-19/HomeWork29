@@ -58,7 +58,7 @@ def read_file(data, json_file, model):
 
 
 if __name__ == '__main__':
-    read_file(data=ADS_DATA, json_file="../datasets/ads.json", model="ads.ad")
-    read_file(data=CATEGORIES_DATA, json_file="../datasets/categories.json", model="ads.category")
-    read_file(data=USER_DATA, json_file="../datasets/user.json", model="ads.user")
-    read_file(data=LOCATION_DATA, json_file="../datasets/location.json", model="ads.location")
+    read_file(data=ADS_DATA, json_file="ads.json", model="ads.ad")
+    read_file(data=CATEGORIES_DATA, json_file="categories.json", model="category.category")
+    read_file(data=USER_DATA, json_file="user.json", model="user.user")
+    read_file(data=LOCATION_DATA, json_file="location.json", model="location.location")
