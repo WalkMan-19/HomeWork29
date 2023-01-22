@@ -1,10 +1,11 @@
 from django.db.models import Q
 from django.http import JsonResponse
-from django.shortcuts import render
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import UpdateView
+from rest_framework.decorators import permission_classes
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView, DestroyAPIView, UpdateAPIView
+from rest_framework.permissions import IsAuthenticated
 
 from ads.models import Ad
 from ads.serializers import AdListSerializer, AdCreateSerializer, AdRetrieveSerializer, AdUpdateSerializer, \
@@ -60,14 +61,20 @@ class AdListView(ListAPIView):
         return super(AdListView, self).get(request, *args, **kwargs)
 
 
+@permission_classes([IsAuthenticated])
 class AdCreateView(CreateAPIView):
     queryset = Ad.objects.all()
     serializer_class = AdCreateSerializer
+    
+    def create(self, request, *args, **kwargs):
+        request.data['author'] = self.request.user.username
+        return super(AdCreateView, self).create(request, *args, **kwargs)
 
 
 class AdDetailView(RetrieveAPIView):
     queryset = Ad.objects.all()
     serializer_class = AdRetrieveSerializer
+    permission_classes = [IsAuthenticated]
 
 
 class AdUpdateView(UpdateAPIView):
