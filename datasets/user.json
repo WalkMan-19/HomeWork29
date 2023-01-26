@@ -9,6 +9,8 @@
       "password": "gZvptL",
       "role": "member",
       "age": 21,
+      "birth_date": "2000-01-01",
+      "email": "pavel_test@mail.ru",
       "location": 1
     }
   },
@@ -22,6 +24,8 @@
       "password": "4fVqL2",
       "role": "moderator",
       "age": 24,
+      "birth_date": "2000-01-01",
+      "email": "albina_test@ya.ru",
       "location": 3
     }
   },
@@ -35,6 +39,8 @@
       "password": "o535pj",
       "role": "admin",
       "age": 29,
+      "birth_date": "2000-01-01",
+      "email": "ivan_test@gmail.com",
       "location": 8
     }
   },
@@ -48,6 +54,8 @@
       "password": "d49rSO",
       "role": "moderator",
       "age": 19,
+      "birth_date": "2000-01-01",
+      "email": "marina_test@ya.ru",
       "location": 10
     }
   },
@@ -61,6 +69,8 @@
       "password": "wCqlVE",
       "role": "member",
       "age": 41,
+      "birth_date": "2000-01-01",
+      "email": "galina_test@ya.ru",
       "location": 2
     }
   },
@@ -74,6 +84,8 @@
       "password": "xuR2jf",
       "role": "member",
       "age": 37,
+      "birth_date": "2000-01-01",
+      "email": "petr_test@ya.ru",
       "location": 4
     }
   },
@@ -87,6 +99,8 @@
       "password": "gzP4vR",
       "role": "member",
       "age": 26,
+      "birth_date": "2000-01-01",
+      "email": "nikita_test@ya.ru",
       "location": 7
     }
   },
@@ -100,6 +114,8 @@
       "password": "zo0rj6",
       "role": "member",
       "age": 24,
+      "birth_date": "2000-01-01",
+      "email": "violetta_test@ya.ru",
       "location": 5
     }
   },
@@ -113,6 +129,8 @@
       "password": "daMocL",
       "role": "moderator",
       "age": 22,
+      "birth_date": "2000-01-01",
+      "email": "gulnara_test@ya.ru",
       "location": 9
     }
   },
@@ -126,6 +144,8 @@
       "password": "sasha123456",
       "role": "member",
       "age": 35,
+      "birth_date": "2000-01-01",
+      "email": "boris_test@ya.ru",
       "location": 6
     }
   }
